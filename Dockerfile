@@ -19,6 +19,7 @@ SHELL ["/bin/bash", "-c"]
 
 RUN apt-get update && \
     apt-get upgrade -y && \
+    apt-get install git curl telnet dnsutils jq -y && \
     apt-get clean && \
     mkdir -p /tmp
 
