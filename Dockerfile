@@ -60,4 +60,4 @@ RUN cd /tmp && \
 
 # Cleanup
 
-RUN rm -rf /tmp
+RUN rm -rf /tmp/*
