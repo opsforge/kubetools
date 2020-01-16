@@ -21,7 +21,7 @@ RUN rm -rf /tmp/*
 
 # Entrypoint
 
-COPY entrypoint.sh /root/entrypoint.sh
+COPY octant/entrypoint.sh /root/entrypoint.sh
 RUN chmod +x /root/entrypoint.sh
 
 SHELL ["/bin/bash", "-c"]
