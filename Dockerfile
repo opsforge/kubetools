@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 ENV KCTL="latest"
 ENV PKS="1.6.1b20-packed"
-ENV BOSH="6.1.1"
+ENV BOSH="6.4.0"
 ENV CF="latest"
 ENV FLY="latest"
 
@@ -57,6 +57,10 @@ RUN cd /tmp && \
     curl -Lk -o pks 'https://docs.google.com/uc?export=download&id=1JRnzSErlT3r7ACaRnbHdazp0gWJcAZuL' && \
     chmod +x pks && \
     mv pks /usr/local/bin/pks
+    
+# Install Helm
+
+RUN curl -fsSL https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash && \
 
 # Cleanup
 
