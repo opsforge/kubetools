@@ -60,7 +60,7 @@ RUN cd /tmp && \
     
 # Install Helm
 
-RUN curl -fsSL https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash && \
+RUN curl -fsSL https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
 
 # Cleanup
 
